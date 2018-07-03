@@ -14,7 +14,7 @@ mongoose.connect('mongodb://127.0.0.1:auth/auth');
 
 // App Setup app.use registers morgan and body parser as middleware.
 app.use(morgan('combined'));
-app.use(bodyParser.json( {type: '*/* ' }));
+app.use(bodyParser.json( {type: '*/*' }));
 router(app);
 
 // Server Setup
